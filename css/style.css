@@ -115,8 +115,8 @@ body {
 	position: absolute;
 	top: 42px;
 	left: 50px;
-	height:1px;
-	width: 1px;
+	height:2px;
+	width: 2px;
 	background-color: #fff;
 	opacity: 0;
 	z-index: 2;
@@ -136,7 +136,24 @@ body {
 	width: 5px;
 	height: 80px;
 	background: linear-gradient(to top, #a8a8a8 0%,#a8a8a8 28%,#27a5f9 28%,#27a5f9 100%);
-	border-radius:  30% 30% 0 0;
+	border-radius:  40% 40% 0 0;
+}
+.sword1:before,
+.sword1:after,
+.sword2:before,
+.sword2:after {
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 2px;
+	background-color: #fff;
+	top: 100%;
+	left: -1px;
+	border-radius: 1px;
+}
+.sword1:before,
+ .sword2:before {
+	top: 70%;
 }
 
 .star_wars:hover .sword1 {
@@ -150,7 +167,7 @@ body {
 	width: 5px;
 	height: 80px;
 	background: linear-gradient(to top, #a8a8a8 0%,#a8a8a8 28%, #FF282C 28%,#FF282C 100%);
-	border-radius: 30% 30% 0 0;
+	border-radius: 40% 40% 0 0;
 }
 
 .star_wars:hover .sword2 {
