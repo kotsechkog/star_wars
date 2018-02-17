@@ -26,7 +26,7 @@ body {
 
 @keyframes  moveSwordBlue {
 	50% {
-	transform: translateX(-10px) rotate(-30deg) skewY(50deg);
+	transform: translateX(-10px) rotate(-30deg) skewX(20deg);
 	}
 	75% {
 	 transform: translateX(30px) rotate(45deg); 
@@ -37,7 +37,7 @@ body {
 }
 @keyframes  moveSwordRed {
 	50% {
-	transform: translateX(-10px) rotate(30deg) skewY(-60deg);
+	transform: translateX(-10px) rotate(30deg) skewX(-20deg);
 	}
 	75% {
 	 transform: translateX(-30px) rotate(-45deg); 
@@ -48,29 +48,52 @@ body {
 }
 
 @keyframes sparkA {
-	37% {
+	18.9% {
 		opacity: 0;
 	}
-	38% {
+	19% {
 		transform: translate(0);
 		opacity: 1
 	}
-	80% {
+	40% {
 		transform: translate(50px, -40px);
 		opacity: 0;
 	}
-}
-
-@keyframes sparkB {
-	37% {
+	68.9% {
 		opacity: 0;
 	}
-	38% {
+	69% {
 		transform: translate(0);
 		opacity: 1
 	}
-	80% {
+	90% {
+		transform: translate(20px, -80px);
+		opacity: 0;
+	}
+
+}
+
+@keyframes sparkB {
+	18.9% {
+		opacity: 0;
+	}
+	19% {
+		transform: translate(0);
+		opacity: 1
+	}
+	40% {
 		transform: translate(-100px, 20px);
+		opacity: 0;
+	}
+	68.9% {
+		opacity: 0;
+	}
+	69% {
+		transform: translate(0);
+		opacity: 1
+	}
+	90% {
+		transform: translate(-60px, 40px);
 		opacity: 0;
 	}
 	
@@ -99,10 +122,10 @@ body {
 	z-index: 2;
 }
 .star_wars:hover .spark:before {
-	animation: sparkA 2s ease-out 1s infinite;
+	animation: sparkA 4s ease-out infinite;
 } 
 .star_wars:hover .spark:after {
-	animation: sparkB 2s ease-out 1s infinite;
+	animation: sparkB 4s ease-out infinite;
 }
 
 
@@ -117,15 +140,7 @@ body {
 }
 
 .star_wars:hover .sword1 {
-	animation: moveSwordBlue 1s ease-in 1s infinite alternate;
-}
-
-.star_wars:hover .sword2 {
-	animation: moveSwordRed 1s ease-in 1s infinite alternate;
-}
-
-.star_wars:hover .spark1 {
-	animation: sparkA 2s ease-out 1s infinite;
+	animation: moveSwordBlue 1s ease-in infinite alternate;
 }
 
 .sword2 {
@@ -136,6 +151,10 @@ body {
 	height: 80px;
 	background: linear-gradient(to top, #a8a8a8 0%,#a8a8a8 28%, #FF282C 28%,#FF282C 100%);
 	border-radius: 30% 30% 0 0;
+}
+
+.star_wars:hover .sword2 {
+	animation: moveSwordRed 1s ease-in infinite alternate;
 }
 
 
